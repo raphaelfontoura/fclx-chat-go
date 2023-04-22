@@ -37,16 +37,16 @@ func main() {
 		InitialSystemMessage: configs.InitialChatMessage,
 	}
 
-	chatConfigStream := chatcompletionstream.ChatCompletionConfigInputDTO{
-		Model:                configs.Model,
-		ModelMaxTokens:       configs.ModelMaxTokens,
-		Temperature:          float32(configs.Temperature),
-		TopP:                 float32(configs.TopP),
-		N:                    configs.N,
-		Stop:                 configs.Stop,
-		MaxTokens:            configs.MaxTokens,
-		InitialSystemMessage: configs.InitialChatMessage,
-	}
+	// chatConfigStream := chatcompletionstream.ChatCompletionConfigInputDTO{
+	// 	Model:                configs.Model,
+	// 	ModelMaxTokens:       configs.ModelMaxTokens,
+	// 	Temperature:          float32(configs.Temperature),
+	// 	TopP:                 float32(configs.TopP),
+	// 	N:                    configs.N,
+	// 	Stop:                 configs.Stop,
+	// 	MaxTokens:            configs.MaxTokens,
+	// 	InitialSystemMessage: configs.InitialChatMessage,
+	// }
 
 	usecase := chatcompletion.NewChatCompletionUseCase(repo, client)
 
