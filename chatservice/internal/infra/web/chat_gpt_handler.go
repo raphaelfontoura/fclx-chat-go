@@ -2,6 +2,7 @@ package web
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 
@@ -24,6 +25,7 @@ func NewWebChatGPTHandler(usecase chatcompletion.ChatCompletionUseCase, config c
 
 func (h *WebChatGPTHandler) Handle(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
+		fmt.Print(r)
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		return
 	}
