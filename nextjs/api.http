@@ -13,7 +13,7 @@ GET http://localhost:3000/api/chats
 
 
 ###
-@chatId = 5fd89f9c-f0d6-467a-a083-201513e8f06b
+@chatId = 3877cd73-f7ae-419c-abe0-55a3801f4b3b
 GET http://localhost:3000/api/chats/{{chatId}}/messages
 
 ###
@@ -21,7 +21,7 @@ POST http://localhost:3000/api/chats/{{chatId}}/messages
 Content-Type: application/json
 
 {
-  "message": "Estou testando a API"
+  "message": "Estou testando a API 3"
 }
 
 ###
